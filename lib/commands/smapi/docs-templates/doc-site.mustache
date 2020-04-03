@@ -1,35 +1,43 @@
-## smapi command {#smapi-command}
+### smapi command {#smapi-command}
 
 {{{smapiCommandDescription}}}
 
-`smapi` command format:
+**Syntax:**
 
-`$ {{baseCommand}} <subcommand> `
+```
+$ {{baseCommand}} <subcommand> 
+```
 
-## Subcommands
+#### Subcommands
+{:.no_toc}
 
-| Task  | Subcommand |
+| Subcommand <img width=350 /> | Description |
 |---|---|
-{{#commands}} 
-| {{{description}}} | [{{name}}](#{{name}}-subcommand) |
-{{/commands}} 
+{{#commands}}
+| [`{{name}}`](#{{name}}-subcommand) | {{{description}}}  |
+{{/commands}}
+
 {{#commands}} 
 
 #### {{name}} subcommand {#{{name}}-subcommand}
+{:.no_toc}
 
 {{description}}
 
-`{{name}}` command format:
+**Syntax:**
 
-`$ {{baseCommand}} {{name}} {{{optionsString}}}`
+```
+$ {{baseCommand}} {{name}} {{{optionsString}}}
+```
 
-**Options**
+**Options:**
 <dl>
    {{#options}}
-    <dt>{{{name}}}</dt>
+    <dt>{{name}}</dt>
     <dd>{{{description}}}</dd>
     {{/options}}
 </dl>
+
 {{/commands}}
 
 
