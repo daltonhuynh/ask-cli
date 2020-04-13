@@ -1,35 +1,31 @@
 ## smapi {#smapi-command}
 
-{{{smapiCommandDescription}}}
+Provides subcommands that have a one-to-one relationship with the underlying API operations in the Alexa Skill Management API (SMAPI). The commands allow detailed control of API inputs and expose raw outputs. There are subcommands for creating and updating the skill, interaction model, and account linking information as well as starting the skill certification process.
 
 **Syntax**
 
-`$ {{baseCommand}} <subcommand> `
+`{{baseCommand}} <subcommand>`
 
-smapi subcommands
-
-|   |   |
-|---|---|
-{{#commands}} 
-| {{{description}}} | [{{name}}](#{{name}}-subcommand) |
-{{/commands}} 
+#### Subcommands
+{:.no_toc}
 {{#commands}} 
 
-#### {{name}} {#{{name}}-subcommand}
+### {{name}} {#{{name}}-subcommand}
 
 {{description}}
 
 **Syntax**
 
-`$ {{baseCommand}} {{name}} {{{optionsString}}}`
+```
+{{baseCommand}} {{name}} {{{optionsString}}}
+```
 
 **Options**
 <dl>
    {{#options}}
-    <dt>{{{name}}}</dt>
+    <dt>{{name}}</dt>
     <dd>{{{description}}}</dd>
     {{/options}}
 </dl>
+
 {{/commands}}
-
-
